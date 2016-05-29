@@ -86,56 +86,47 @@
 <!--
 <body class="home-template">
 -->
-<body id="index" class="lightnav animsition">
+<body id="index" class="lightnav animsition page-header-fixed">
+      
+
       <!-- BEGIN SIDEBAR -->
-<div class="page-sidebar nav-collapse collapse" style="height: 100% !important;">
+<div class="page-sidebar nav-collapse" style="height: 100% !important;width:150px">
     <!-- BEGIN SIDEBAR MENU -->
     <ul class="page-sidebar-menu">
-       
-        <li id="statusLi" class="">
+        <li id="iconLi" class="">
+            <div class="sidebar-img"><img src="/img/bg1.jpg"/></div>
+        </li>
+        <li id="statusLi" class="active">
             <a id="statusNav" href="status">
-                <div class="icon" ><i class="fa fa-bar-chart sidebar-icon"></i></div>
-                <span class="title">系统状态</span>
+                <div class="icon" ><i class="fa fa-home sidebar-icon"></i></div>
+                <span class="title">首页</span>
             </a>
         </li>
         <li id="versionLi" class="">
             <a id="versionNav" href="index">
                 <div class="icon" ><i class="fa fa-th-list sidebar-icon"></i></div>
-                <span class="title">版本管理</span>
+                <span class="title">分类</span>
             </a>
         </li>
         <li id="taskLi" class="">
             <a id="taskNav" href="task">
                 <div class="icon" ><i class="fa fa-tasks sidebar-icon"></i></div>
-                <span class="title">任务管理</span>
-                #if (${addedTaskCount} && ${addedTaskCount} != 0)
-                <span class="badge badge-danger main-badge ng-binding">${addedTaskCount}</span>
-                #end
+                <span class="title">归档</span>
+                
             </a>
         </li>
         <li id="ruleLi" class="">
             <a id="ruleNav" href="rule">
                 <div class="icon" ><i class="fa fa-cogs sidebar-icon"></i></div>
-                <span class="title">规则管理</span>
-            </a>
-        </li>
-        <li id="questionLi" class="">
-            <a id="questionNav" href="question">
-                <div class="icon" ><i class="fa fa-wrench sidebar-icon"></i></div>
-                <span class="title">问题排查</span>
-            </a>
-        </li>
-        <li id="aboutUsLi" class="">
-            <a id="aboutUsNav" href="aboutUs">
-                <div class="icon" ><i class="fa fa-group sidebar-icon"></i></div>
-                <span class="title">关于我们</span>
+                <span class="title">关于</span>
             </a>
         </li>
     </ul>
     <!-- END SIDEBAR MENU -->
 </div>
+      
+      
       <!-- ============================ Content =========================== -->
-
 <section id="intro">
     <div class="container">
         
@@ -221,10 +212,7 @@ Quick StartCreate a new p
 <footer>
     <div class="container">
             <div class="copy">
-                <p>
-                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
-                </p>
-                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+                <p>Theme By <a href="//weithw.github.io" style="color: #767D84">Weithw</a></p>
             </div>
             <div class="social">
                 <ul>
@@ -284,6 +272,6 @@ Quick StartCreate a new p
       });
     });
 </script>
-
+      
 </body>
 </html>

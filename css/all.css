@@ -4180,6 +4180,27 @@ thead tr{
     margin-right: 8px;
     float: left;
 }
+
+.sidebar-img{
+    border-radius: 60px;overflow:hidden;width:120px;height:120px;padding: 0px;
+    margin-left:15px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border: 3px solid #f0f0f0;
+}
+.sidebar-img img{
+    height: 100%;
+}
+.page-sidebar{
+    box-shadow: 0px 0px 11px;
+}
+
+footer{
+    background: #f0f0f0;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
 /*   
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap v2.3.1
 Version: 1.3

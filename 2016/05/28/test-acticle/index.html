@@ -82,7 +82,7 @@
             <div class="sidebar-img"><img src="/img/avator.jpg"/></div>
         </li>
         <li id="statusLi" class="active">
-            <a id="statusNav" href="status">
+            <a id="statusNav" href="/">
                 <div class="icon" ><i class="fa fa-home sidebar-icon"></i></div>
                 <span class="title">首页</span>
             </a>
@@ -112,9 +112,14 @@
       <div class="main-container" style="padding-left:150px;background-color:#f0f0f0">
             <div class="header-navbar navbar-fixed-top" style="">
     <div class="container-fluid" style="margin-left:0px !important;padding-left:0px">
+        
        <div class="search-box" id="main_search_box">
-            <div class="search-tip">Search</div><input type="text" class="search-input"/>
+            <div class="fa fa-search search-logo"></div>
+            <label class="search-tip">Search</label>
+            <input type="text" class="search-input"/>
+            <div class="search-btn"></div>
        </div>
+
     </div>
     <!-- END TOP NAVIGATION BAR -->
 </div>
@@ -123,23 +128,25 @@
             
 <section id="intro">
     <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
+        <div class="main-content">
+
+            <div class="row col-md-offset-2">
+                <div class="col-md-8">
+        			<span class="post-meta">
       <time datetime="2016-05-28T07:57:37.000Z" itemprop="datePublished">
           2016-05-28
       </time>
     
 </span>
-                <h1>test acticle</h1>
+                    <h1>test acticle</h1>
+                </div>
             </div>
-        </div>
-        <div class="col-md-8 col-md-offset-2">
-      		
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="pagination" role="pagination">
+            <div class="col-md-8 col-md-offset-2">
+          		
+                
+                <hr class="nogutter">
+            </div>
+            <nav class="pagination" role="pagination">
     
     
     <a class="pull-right" href="/2016/05/28/hello-world/">
@@ -148,7 +155,8 @@
     
 </nav>
 
-        <div class="duoshuo">
+            <div class="clearfix"></div>
+            <div class="duoshuo">
 <div class="ds-thread" data-thread-key="2016/05/28/test-acticle/" data-title="test acticle" data-url="http://weithw.github.io/2016/05/28/test-acticle/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"weithw"};
@@ -162,6 +170,7 @@ var duoshuoQuery = {short_name:"weithw"};
 })();
 </script>
 </div>
+        </div>
     </div>
 </section>
 

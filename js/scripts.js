@@ -192,6 +192,7 @@ $(document).ready(function($) {
 $(document).ready(function($) {
 	$("#main_search_box").children(".search-input").focus(function(){
 		$("#main_search_box").addClass("search-focus-input");
+		$("#main_search_box").children(".search-btn").show();
 		// $("#main_search_box").children(".search-tip").css("font-size", 8);
 		// $("#main_search_box").children(".search-tip").css("top", -12);
 		// $("#main_search_box").children(".search-tip").css("color", "#424242");
@@ -202,7 +203,10 @@ $(document).ready(function($) {
 		// });
 	});
 	$("#main_search_box").children(".search-input").blur(function(){
-		$("#main_search_box").removeClass("search-focus-input");
+		if ($("#main_search_box").children(".search-input").val() == "") {
+			$("#main_search_box").removeClass("search-focus-input");
+			$("#main_search_box").children(".search-btn").hide();
+		}
 		// $("#main_search_box").children(".search-tip").css("f
 	});
 });

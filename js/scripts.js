@@ -209,4 +209,10 @@ $(document).ready(function($) {
 		}
 		// $("#main_search_box").children(".search-tip").css("f
 	});
+
+	$("#main_search_box").children(".search-btn").hover(function(){
+		$("#main_search_box").addClass("search-hover-input");
+	}, function() {
+		$("#main_search_box").removeClass("search-hover-input");
+	});
 });
